@@ -1,0 +1,11 @@
+KeleyLive\CentralBundle\Entity\Group:
+    exclusion_policy: ALL
+    xml_root_name:    groups
+    access_order:     alphabetical
+    properties:
+        id:
+            expose: true
+        name:
+            expose: true
+        users:
+            expose: true

@@ -1,0 +1,17 @@
+KeleyLive\CentralBundle\Entity\User:
+    exclusion_policy: ALL
+    xml_root_name:    users
+    access_order:     alphabetical
+    properties:
+        id:
+            expose: true
+        email:
+            expose: true
+        lastName:
+            expose: true
+        firstName:
+            expose: true
+        isEnabled:
+            expose: true
+        createdAt:
+            expose: true

@@ -1,0 +1,12 @@
+keley_live_central_users:
+    type: rest
+    resource: KeleyLive\CentralBundle\Controller\UserController
+
+keley_live_central_groups:
+    type: rest
+    resource: KeleyLive\CentralBundle\Controller\GroupController
+
+keley_live_central:
+    resource: "@KeleyLiveCentralBundle/Controller/"
+    type:     annotation
+    prefix:   /

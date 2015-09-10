@@ -1,0 +1,38 @@
+<?php
+
+namespace KeleyLive\CentralBundle\Entity;
+
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Jroup
+ *
+ * @ORM\Table(name="user_group")
+ * @ORM\Entity
+ */
+class Group
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="name", type="string", length=128)
+     */
+    private $name;
+
+    /**
+     * @var ArrayCollection
+     *
+     * @ORM\ManyToMany(targetEntity="User", mappedBy="groups")
+     **/
+    private $users;
+}
